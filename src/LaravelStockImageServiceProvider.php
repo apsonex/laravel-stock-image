@@ -17,6 +17,7 @@ class LaravelStockImageServiceProvider extends PackageServiceProvider
          */
         $package
             ->name('laravel-stock-image')
+            ->hasConfigFile('stock-image')
             ->hasRoute('web');
     }
 }
