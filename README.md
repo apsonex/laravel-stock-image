@@ -90,7 +90,7 @@ POST /stock-image-search
     "unsplash": "UNSPLASH_API_KEY",
     "pixabay": "PIXABAY_API_KEY"
   },
-  "placeholder_text": "No image found",
+  "placeholder_text": "Placeholder Image",
   "placeholder_size": "400x300",
   "placeholder_bg_color": "cccccc",
   "placeholder_text_color": "333333"
