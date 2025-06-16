@@ -78,7 +78,7 @@ POST /stock-image-search
 ### ✅ Example Request (JSON)
 
 ```json
-POST /stock-image-search
+POST /api/ai/tools/stock-images/search
 
 {
   "keywords": "mountain, beach",
