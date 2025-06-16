@@ -3,8 +3,10 @@
 // config for Apsonex/LaravelStockImage
 return [
     'route' => [
-        'enable' => true,
-        'path' => 'stock-image-search',
-        'middleware' => [],
-    ]
+        'enable'     => true,
+        'path'       => 'api/ai/tools/email-block-create',
+        'middleware' => [
+            // middlewares
+        ],
+    ],
 ];

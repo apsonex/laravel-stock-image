@@ -4,7 +4,7 @@ use Apsonex\LaravelStockImage\Http\Controllers\ImageSearchController;
 use Illuminate\Support\Facades\Route;
 
 if (config('stock-image.route.enable') === true) {
-    Route::middleware(config('stock-image.route.middleware'))->group(function () {
+    Route::middleware(config('stock-image.route.middleware') ?: [])->group(function () {
 
         /**
          * Search Stock Image
