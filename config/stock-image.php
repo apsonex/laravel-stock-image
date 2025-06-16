@@ -4,7 +4,7 @@
 return [
     'route' => [
         'enable'     => true,
-        'path'       => 'api/ai/tools/email-block-create',
+        'path'       => 'api/ai/tools/stock-images/search',
         'middleware' => [
             // middlewares
         ],
