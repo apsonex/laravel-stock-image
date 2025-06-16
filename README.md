@@ -77,9 +77,9 @@ POST /stock-image-search
 
 ### ✅ Example Request (JSON)
 
-```json
-POST /api/ai/tools/stock-images/search
+`POST` to `/api/ai/tools/stock-images/search`
 
+```json
 {
   "keywords": "mountain, beach",
   "random_result": true,
