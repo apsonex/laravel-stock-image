@@ -80,6 +80,7 @@ POST /stock-image-search
 `POST` to `/api/ai/tools/stock-images/search`
 
 ```json
+// result
 {
   "keywords": "mountain, beach",
   "random_result": true,
