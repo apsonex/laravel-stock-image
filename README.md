@@ -38,10 +38,12 @@ This will create `config/stock-image.php`:
 ```php
 return [
     'route' => [
-        'enable' => true,
-        'path' => 'stock-image-search',
-        'middleware' => [], // Add auth or other middleware if needed
-    ]
+        'enable'     => true,
+        'path'       => 'api/ai/tools/stock-images/search',
+        'middleware' => [
+            // middlewares
+        ],
+    ],
 ];
 ```
 
@@ -64,7 +66,7 @@ POST /stock-image-search
 | `random_provider`      | `boolean` | Whether to pick a random provider |
 | `page`                 | `int`     | Which page to fetch from provider |
 | `cache`                | `boolean` | Whether to cache the result (default: false) |
-| `result_limit`         | `int`     | Limit number of images provide result |
+| `result_limit`         | `int`     | Limit number of images result |
 | `provider_api_keys`    | `array`   | Optional - Override API keys per provider (optional) |
 | `placeholder_size`     | `string`  | Used only when fallback placeholder is returned e.g. `600x400` |
 | `placeholder_text`     | `string`  | Text to show in placeholder image e.g. `Sample Text` |
@@ -86,12 +88,12 @@ POST /stock-image-search
   "cache": false,
   "result_limit": 10,
   "provider_api_keys": {
-    "pexels": "PEXELS_API_KEY",
-    "unsplash": "UNSPLASH_API_KEY",
-    "pixabay": "PIXABAY_API_KEY"
+    "pexels": "<PEXELS_API_KEY>",
+    "unsplash": "<UNSPLASH_API_KEY>",
+    "pixabay": "<PIXABAY_API_KEY>"
   },
   "placeholder_text": "Placeholder Image",
-  "placeholder_size": "400x300",
+  "placeholder_size": "600x400",
   "placeholder_bg_color": "cccccc",
   "placeholder_text_color": "333333"
 }
