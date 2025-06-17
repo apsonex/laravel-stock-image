@@ -90,7 +90,7 @@ class ImageSearchController extends Controller
                 $result = $service->search($keyword);
 
                 if ($result) {
-                    $this->printLog($result);
+                    // $this->printLog($result);
 
                     return response()->json([
                          ...$result,
