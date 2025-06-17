@@ -90,8 +90,6 @@ class ImageSearchController extends Controller
                 $result = $service->search($keyword);
 
                 if ($result) {
-                    // $this->printLog($result);
-
                     return response()->json([
                          ...$result,
                         'status' => 'success',
@@ -126,16 +124,5 @@ class ImageSearchController extends Controller
             array_map('trim', explode(',', $keywords)),
             fn($keyword) => ! empty($keyword)
         );
-    }
-
-    protected function printLog($result)
-    {
-        Log::debug(implode("\n", [
-            '---',
-            'Output: ',
-            now('America/Toronto')->toDayDateTimeString(),
-            json_encode($result),
-            '---',
-        ]));
     }
 }
